@@ -1,0 +1,8 @@
+<!--(keyup.enter)="inputTextFunction(txtInput.value)"-->
+<input
+  type="text"
+  [value]="term"
+  [placeholder]="placeHolder"
+  class="form-control"
+  (keyup)="onKeyPress(txtInput.value)"
+  #txtInput>

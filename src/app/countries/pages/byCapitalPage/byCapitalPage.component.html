@@ -1,0 +1,18 @@
+<h2>Por Capital</h2>
+<hr>
+<div class="row">
+  <div class="col">
+    <shared-input-text-custom
+      (outPutText)="searchByCapital($event)"
+      placeHolder="Buscar por capital"
+      [term]="term">
+    </shared-input-text-custom>
+  </div>
+</div>
+<hr>
+<div class="row">
+  <div class="col">
+    <shared-loading-spinner *ngIf="isLoading" ></shared-loading-spinner>
+    <countries-country-table [countries]="countries"></countries-country-table>
+  </div>
+</div>
